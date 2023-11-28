@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function call_update_cmd() {
+	
+	if [ [ $# -eq 2 ] ];
+		then
+			printf "Calling $1 $2.\n"
+		else
+			printf "Calling $1.\n"
+	fi
+	
+	$1
+}
+
+call_update_cmd "sudo apt update && sudo apt upgrade" "to update package database"
+call_update_cmd "sudo apt upgrade" "to upgrade system packages"
+call_update_cmd "flatpak update" "to update your flatpacks"
+call_update_cmd "sudo snap refresh" "to update your snaps (EWWW ... just kidding I appreciate my snaps)"
+call_update_cmd "rustup update" "to update rust and Cargo and such"
