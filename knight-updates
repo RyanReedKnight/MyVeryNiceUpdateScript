@@ -17,7 +17,7 @@ function call_update_cmd() {
 
 call_update_cmd "sudo apt update" "to update package database"
 call_update_cmd "sudo apt upgrade" "to upgrade system packages"
-call_update_cmd "flatpak update" "to update your flatpacks"
+call_update_cmd "flatpak update" "to update your flatpaks"
 call_update_cmd "sudo snap refresh" "to update your snaps (EWWW ... just kidding I appreciate my snaps)"
 call_update_cmd "rustup update" "to update rust and Cargo and such"
 
