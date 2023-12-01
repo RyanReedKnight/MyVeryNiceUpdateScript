@@ -25,3 +25,5 @@ printf "\nUpdating distrobox without your fancy function.\n"
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sh -s -- --prefix ~/.local
 printf "\nUpdateing nvm without your fancy function. Perhaps these curl updates need a fancy function of their own...\n"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+
+call_update_cmd "exec $SHELL" "to update terminal session now that your updates have finished"
