@@ -2,6 +2,8 @@
 
 function call_update_cmd() {
 	
+	printf "\n"
+
 	if [ "$#" -eq "2" ];
 		then
 			printf "Calling \"$1\" $2.\n"
@@ -10,7 +12,8 @@ function call_update_cmd() {
 	fi
 	
 	$1
-
+	
+	printf "\n"
 	printf "\n"
 
 }
@@ -23,7 +26,7 @@ call_update_cmd "rustup update" "to update rust and Cargo and such"
 
 printf "\nUpdating distrobox without your fancy function.\n"
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sh -s -- --prefix ~/.local
-printf "\nUpdateing nvm without your fancy function. Perhaps these curl updates need a fancy function of their own...\n"
+printf "\nUpdateing nvm without your fancy function. Perhaps these curl updates need a fancy function of their own ...\n"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
 call_update_cmd "exec $SHELL" "to update terminal session now that your updates have finished"
