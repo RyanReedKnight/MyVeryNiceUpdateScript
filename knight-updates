@@ -27,6 +27,7 @@ call_update_cmd "flatpak update" "to update your flatpaks"
 call_update_cmd "flatpak uninstall --unused" "to clean up your flatpaks"
 call_update_cmd "sudo snap refresh" "to update your snaps (EWWW ... just kidding I appreciate my snaps)"
 call_update_cmd "rustup update" "to update rust and Cargo and such"
+call_update_cmd "composer self-update" "to update composer"
 
 printf "\n${_BLUE_}Updateing nvm without your fancy function. Perhaps these curl updates need a fancy function of their own ...\n"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
